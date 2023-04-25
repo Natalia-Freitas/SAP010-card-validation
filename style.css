@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
 html{
-    background-color: #EA7423;
+    background-color:  #F4AA78;
     
 }
 
@@ -12,7 +13,7 @@ body{
     padding-top: 6em;
     padding-bottom: 3em;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Sulphur Point'
    
     
 
@@ -23,21 +24,29 @@ h1,h2{
     font-weight:200;
 
 }
-button{
+#recebe{
     background-color: #F4AA78;
     border-color:  #F4AA78;
     padding: 20px 60px 10px ;
-    font-weight:bolder;
-    
-    
-    
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family:'Sulphur Point'
     
 }
-input{
+#recebe:hover{
+  background-color:   #F7D0B5;
+  
+    
+}
+    
+    
+
+#creditCardNumber{
     background-color: #F7D0B5;
     border-color: #F7D0B5;
-    
     padding: 20px 60px 10px ;
-    margin: 25px 25px 150px;
+    margin-bottom: 30px;
+    text-align: center;
    
 }
