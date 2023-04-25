@@ -1,9 +1,9 @@
 const validator = {
   isValid: function(creditCardNumber){
   
-    let numeroArray = creditCardNumber.split('');
+    const numeroArray = creditCardNumber.split('');
     let dig;
-    let arr = [];
+    const arr = [];
     let total = 0;
     
     for (let i = 0; i < numeroArray.length; i++){
@@ -23,7 +23,7 @@ const validator = {
     }
     
     console.log(total); // Mostra o total da soma
-    if(total % 10 == 0){
+    if(total % 10 === 0){
       alert("Cartão válido");
     } else{
       alert("Cartão Inválido");
@@ -31,7 +31,7 @@ const validator = {
   },
   maskify: function(creditCardNumber){
     if (creditCardNumber.length >=4){
-      return"#".repeat(creditCardNumber.length - 4) + creditCardNumber.slice(-4);
+      return"#".repeat(creditCardNumber.length - 4) + creditCardNumber.slice(-4);  // repete o #, menos os 4 últimos digitos
     } else{
       return creditCardNumber;
     }
